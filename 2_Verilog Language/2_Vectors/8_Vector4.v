@@ -4,4 +4,5 @@ module top_module (
 
     // assign out = { replicate-sign-bit , the-input };
     assign out = {{24{in[7]}}, in[7:0]};
+    
 endmodule
