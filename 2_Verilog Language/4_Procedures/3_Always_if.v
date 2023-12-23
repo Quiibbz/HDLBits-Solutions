@@ -13,4 +13,5 @@ module top_module(
         if(sel_b1 && sel_b2) out_always = b;
         else out_always = a;
     end
+    
 endmodule
