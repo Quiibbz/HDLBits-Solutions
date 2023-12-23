@@ -8,7 +8,6 @@ module top_module(
     output reg out_always   ); 
     
     assign out_assign = (sel_b1 && sel_b2) ? b: a;
-
     always@(*) begin
         if(sel_b1 && sel_b2) out_always = b;
         else out_always = a;
