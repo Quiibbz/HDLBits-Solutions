@@ -11,12 +11,15 @@ module top_module(
             		fadd instancei(.a(a[i]), .b(b[i]), .cin(cout[i - 1]), .cout(cout[i]), .sum(sum[i]));
 		end
 	endgenerate
+	
 endmodule
 
 module fadd(
     input a, b, cin,
     output cout, sum
 );
+	
     assign sum = a ^ b ^ cin;
     assign cout = a & b | a & cin | b & cin;
+	
 endmodule
