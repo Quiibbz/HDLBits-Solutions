@@ -4,8 +4,10 @@ module top_module (
     output wire o2,
     output wire o1,
     output wire o0  ); // Module body starts after module declaration
+    
     assign o2 = vec[2];
     assign o1 = vec[1];
     assign o0 = vec[0];
     assign outv = vec[2:0];
+    
 endmodule
