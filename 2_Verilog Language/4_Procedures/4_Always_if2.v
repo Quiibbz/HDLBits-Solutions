@@ -12,7 +12,6 @@ module top_module (
         else
             shut_off_computer = 0;
     end
-
     always @(*) begin
         if (~arrived)
            keep_driving = ~gas_tank_empty;
