@@ -9,4 +9,5 @@ module top_module(
         for(i = 0; i < 255; i = i + 1)
             if(in[i] != 0) out = out + 1;
     end
+    
 endmodule
