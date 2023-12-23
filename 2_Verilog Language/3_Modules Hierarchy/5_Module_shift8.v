@@ -4,6 +4,7 @@ module top_module (
     input [1:0] sel, 
     output [7:0] q 
 );
+    
     wire[23:0] o;
     my_dff8 instance1(.clk(clk), .d(d), .q(o[7:0]));
     my_dff8 instance2(.clk(clk), .d(o[7:0]), .q(o[15:8]));
@@ -16,4 +17,5 @@ module top_module (
             3: q = o[23:16];
         endcase
     end
+    
 endmodule
