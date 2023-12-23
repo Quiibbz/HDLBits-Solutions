@@ -6,6 +6,7 @@ module top_module(
     input d,
     output out,
     output out_n   ); 
+    
     wire[1:0] o;
     assign o[0] = a && b;
     assign o[1] = c && d;
