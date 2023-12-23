@@ -5,6 +5,7 @@ module top_module(
     output out_or_logical,
     output [5:0] out_not
 );
+    
     assign out_or_bitwise[2] = a[2] || b[2];
     assign out_or_bitwise[1] = a[1] || b[1];
     assign out_or_bitwise[0] = a[0] || b[0];
