@@ -3,4 +3,5 @@ module top_module (
     output parity); 
 
     assign parity = ^in;
+    
 endmodule
