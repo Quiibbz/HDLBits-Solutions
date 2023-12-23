@@ -4,6 +4,7 @@ module top_module(
     input sub,
     output [31:0] sum
 );
+    
     wire cout;
     wire[31:0] o;
     assign o = b ^ {32{sub}};
