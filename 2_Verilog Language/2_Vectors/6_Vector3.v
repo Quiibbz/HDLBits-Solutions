@@ -7,4 +7,5 @@ module top_module (
     assign x = {b[1:0], c, d[4]};
     assign y = {d[3:0], e[4:1]};
     assign z = {e[0], f, 2'b11};
+	
 endmodule
