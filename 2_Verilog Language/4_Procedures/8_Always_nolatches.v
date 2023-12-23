@@ -15,4 +15,5 @@ module top_module (
             16'he075: up = 1;
         endcase
     end
+    
 endmodule
